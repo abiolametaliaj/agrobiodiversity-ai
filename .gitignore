@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Te dhena dhe modele (nuk ngarkohen ne Git)
+data/images/
+data/raw/
+data/processed/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Databaza lokale
+*.db
+*.sqlite
+*.sqlite3
+
+# Mjete dhe sisteme
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Sekrete
+.env
