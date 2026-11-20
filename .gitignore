@@ -19,6 +19,7 @@ data/processed/
 
 # Databaza lokale
 *.db
+!data/observations_demo.db
 *.sqlite
 *.sqlite3
 

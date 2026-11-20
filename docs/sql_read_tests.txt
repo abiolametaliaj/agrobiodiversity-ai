@@ -1,0 +1,64 @@
+== Q1: Të gjitha vëzhgimet (kolonat kryesore) (10 rreshta) ==
+observation_id | class_label       | label_status | plot_id | date_time        | data_origin
+---------------+-------------------+--------------+---------+------------------+------------
+DEMO-001       | Coccinellidae     | demo         | P01     | 2026-11-03 10:15 | demo       
+DEMO-002       | Coccinellidae     | demo         | P01     | 2026-11-03 10:18 | demo       
+DEMO-003       | Syrphidae         | demo         | P01     | 2026-11-05 09:40 | demo       
+DEMO-004       | Syrphidae         | demo         | P02     | 2026-11-06 11:05 | demo       
+DEMO-005       | Apis mellifera    | demo         | P02     | 2026-11-06 11:30 | demo       
+DEMO-006       | Apis mellifera    | demo         | P03     | 2026-11-09 14:20 | demo       
+DEMO-007       | Lepidoptera larva | demo         | P03     | 2026-11-10 08:55 | demo       
+DEMO-008       | Lepidoptera larva | demo         | P01     | 2026-11-12 16:00 | demo       
+DEMO-009       | Aphididae         | demo         | P02     | 2026-11-13 10:10 | demo       
+DEMO-010       |                   | demo         | P03     | 2026-11-14 12:45 | demo       
+
+== Q2: Filtër sipas datës (3–6 nëntor 2026) (5 rreshta) ==
+observation_id | class_label    | plot_id | date_time       
+---------------+----------------+---------+-----------------
+DEMO-001       | Coccinellidae  | P01     | 2026-11-03 10:15
+DEMO-002       | Coccinellidae  | P01     | 2026-11-03 10:18
+DEMO-003       | Syrphidae      | P01     | 2026-11-05 09:40
+DEMO-004       | Syrphidae      | P02     | 2026-11-06 11:05
+DEMO-005       | Apis mellifera | P02     | 2026-11-06 11:30
+
+== Q3: Filtër sipas parcelës (P02) (3 rreshta) ==
+observation_id | class_label    | date_time       
+---------------+----------------+-----------------
+DEMO-004       | Syrphidae      | 2026-11-06 11:05
+DEMO-005       | Apis mellifera | 2026-11-06 11:30
+DEMO-009       | Aphididae      | 2026-11-13 10:10
+
+== Q4: Filtër sipas klasës (Syrphidae) (2 rreshta) ==
+observation_id | plot_id | date_time       
+---------------+---------+-----------------
+DEMO-003       | P01     | 2026-11-05 09:40
+DEMO-004       | P02     | 2026-11-06 11:05
+
+== Q5: Numri i vëzhgimeve për klasë (NULL = pa etiketë) (6 rreshta) ==
+class_label       | n
+------------------+--
+Apis mellifera    | 2
+Coccinellidae     | 2
+Lepidoptera larva | 2
+Syrphidae         | 2
+(pa etiketë)      | 1
+Aphididae         | 1
+
+== Q6: Vëzhgimet me burimin dhe licencën (JOIN) (10 rreshta) ==
+observation_id | source_name | author | license | consent_status
+---------------+-------------+--------+---------+---------------
+DEMO-001       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-002       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-003       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-004       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-005       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-006       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-007       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-008       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-009       | DEMO        | DEMO   | DEMO    | demo          
+DEMO-010       | DEMO        | DEMO   | DEMO    | demo          
+
+== Q7: Demo kundrejt vëzhgimeve reale (1 rreshta) ==
+data_origin | n 
+------------+---
+demo        | 10
