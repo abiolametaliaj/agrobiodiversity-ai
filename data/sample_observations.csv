@@ -1,0 +1,11 @@
+observation_id,image_path,image_hash,class_label,label_status,expert_review,data_origin,group_id,plot_id,date_time,crop_type,phenophase,device,observation_method,source_name,source_url,author,license,consent_status
+DEMO-001,data/demo/demo_001.jpg,,Coccinellidae,demo,not_applicable,demo,G01,P01,2026-11-03 10:15,tomato,flowering,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-002,data/demo/demo_002.jpg,,Coccinellidae,demo,not_applicable,demo,G01,P01,2026-11-03 10:18,tomato,flowering,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-003,data/demo/demo_003.jpg,,Syrphidae,demo,not_applicable,demo,G02,P01,2026-11-05 09:40,tomato,fruiting,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-004,data/demo/demo_004.jpg,,Syrphidae,demo,not_applicable,demo,G03,P02,2026-11-06 11:05,tomato,,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-005,data/demo/demo_005.jpg,,Apis mellifera,demo,not_applicable,demo,G04,P02,2026-11-06 11:30,tomato,flowering,demo-camera,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-006,data/demo/demo_006.jpg,,Apis mellifera,demo,not_applicable,demo,G05,P03,2026-11-09 14:20,tomato,flowering,demo-camera,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-007,data/demo/demo_007.jpg,,Lepidoptera larva,demo,not_applicable,demo,G06,P03,2026-11-10 08:55,tomato,fruiting,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-008,data/demo/demo_008.jpg,,Lepidoptera larva,demo,not_applicable,demo,G07,P01,2026-11-12 16:00,tomato,fruiting,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
+DEMO-009,data/demo/demo_009.jpg,,Aphididae,demo,not_applicable,demo,G08,P02,2026-11-13 10:10,tomato,vegetative,demo-camera,crop,DEMO,,DEMO,DEMO,demo
+DEMO-010,data/demo/demo_010.jpg,,,demo,not_applicable,demo,G09,P03,2026-11-14 12:45,tomato,,demo-phone,close-up,DEMO,,DEMO,DEMO,demo
