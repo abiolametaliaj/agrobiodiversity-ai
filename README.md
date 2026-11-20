@@ -2,7 +2,7 @@
 
 Projekt për lëndën **Data Mining**. Prototip pilot që klasifikon, nga një fotografi, grupin e një insekti dominues në një kulturë bujqësore (kultura e propozuar: domate), tregon një shkallë pasigurie dhe i ruan vëzhgimet në një aplikacion me panel dhe rishikim manual.
 
-> **Statusi:** Java 1 (planifikim). Asnjë model nuk është trajnuar ende.
+> **Statusi:** Java 2 – planifikimi është përfunduar dhe është krijuar infrastruktura fillestare e të dhënave. Eksperimentet me PyTorch kryhen në një dataset demonstrues. Asnjë model nuk është trajnuar ende për identifikimin e insekteve të projektit.
 
 ## Objektivi
 
@@ -42,7 +42,7 @@ Coccinellidae, Syrphidae, bletë mjalti (*Apis mellifera*), larva Lepidoptera, a
 
 ## Struktura e repository-t
 
-```
+```text
 docs/         charter, regjistri i burimeve, skema, diagrami
 data/         vetëm skedarë metadata (fotot NUK ngarkohen në Git)
 notebooks/    eksperimente dhe tutoriale
@@ -72,3 +72,32 @@ pip install -r requirements.txt
 - Project Charter: `docs/project_charter.md`
 - Regjistri i burimeve dhe lejeve: `docs/source_register.md`
 - Skema e të dhënave v0: `docs/schema_v0.sql`
+
+## Java 2 – Computer Vision, PyTorch dhe SQLite
+
+Gjatë javës së dytë, projekti u fokusua në njohjen e koncepteve bazë të Computer Vision, eksperimentimin me Transfer Learning përmes PyTorch dhe krijimin e infrastrukturës fillestare për ruajtjen e të dhënave.
+
+### Detyrat e realizuara
+
+- **Computer Vision:** Përmbledhje e koncepteve të klasifikimit të imazheve, zbulimit të objekteve, tensorëve, parapërpunimit të imazheve dhe overfitting.
+- **PyTorch:** Krijimi i një notebook-u demonstrues bazuar në [tutorialin zyrtar të PyTorch për Transfer Learning](https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html).
+- **Metadata Schema v1:** Përcaktimi i strukturës fillestare të të dhënave dhe informacionit që shoqëron çdo vëzhgim.
+- **Databaza SQLite:** Krijimi i databazës me 10 regjistrime demonstrative dhe tabelat përkatëse.
+- **Importimi dhe testimi:** Krijimi i skriptit Python për importimin e të dhënave nga CSV dhe ekzekutimi i pyetjeve SQL për leximin dhe filtrimin e tyre.
+
+### Skedarët kryesorë
+
+- `notebooks/transfer_learning_demo.ipynb`
+- `docs/concepts_summary.md`
+- `docs/metadata_schema_v1.md`
+- `data/sample_observations.csv`
+- `data/observations_demo.db`
+- `src/db/schema.sql`
+- `src/db/import_observations.py`
+- `src/db/queries.sql`
+- `src/db/run_queries.py`
+- `docs/sql_read_tests.txt`
+
+### Kufizimet e Javës 2
+
+Të dhënat në databazë janë demonstrative dhe nuk përfaqësojnë vëzhgime reale në terren. Rrugët e imazheve janë shembuj. Eksperimenti me PyTorch shërben për demonstrimin e Transfer Learning dhe nuk përfaqëson një model të trajnuar për identifikimin e insekteve në parcelat pilot.
